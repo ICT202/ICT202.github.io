@@ -2,16 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="vieport" content="width=device-width, initial-scale=1.0">
-    <title>Student List</title>
+    <meta name="viewport" content="widht=device-width, intial-scale=1.0">
+    <style>
+        body {
+            font-Family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header, footer {
+            background-color: #333;
+            color: rgb(42, 143, 136);
+            padding: 15px
+        }
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+        nav a {
+            color:rgb(20, 102, 102);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px
+        }
+        .content img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+            width: 98.05%
+        }
+    
+        li {
+            background-color: #fafafa;
+            font-weight: 700; /*Bold for table heading */
+            font-size: 18px;
+            text-align: center;
+        }
+        h1{
+            color: lightblue;
+        }
+      </style>  
 </head>
 <body>
-    <h1>List of Students</h1>
+
+    <header>
+        <h1>Student List</h1>
+        
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="student.html">Students</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
     <ul>
         <li>Arjay N. Bigtas</li>
         <li>Daevhienne Nava Valverde</li>
         <li>Kenneth G. Castro</li>
         <li>Lovely Galgal Castro</li>
     </ul>
-</body>    
+
+    <footer>
+        <p>&copy; 2025 Our School . All rights reserved.</p>
+    </footer>
 </html>
