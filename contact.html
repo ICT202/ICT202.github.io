@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <meta name="viewport" content="widht=device-width, intial-scale=1.0">
     <style>
+        body {
+            font-Family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header, footer {
+            background-color: #333;
+            color: rgb(42, 143, 136);
+            padding: 15px
+        }
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+        nav a {
+            color:rgb(20, 102, 102);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px
+        }
+        .content img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        footer{
+            position:fixed
+            bottom: 0;
+            width: 98.05%
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -22,7 +62,7 @@
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: lightblue;
         }
         .form-group {
             margin-bottom: 15px;
@@ -41,7 +81,7 @@
         }
         .form-group textarea {
             resize: vertical;
-            min-height: 100px;
+            min-height: 50px;
         }
         .btn-submit {
             width: 100%;
@@ -59,9 +99,20 @@
     </style>
 </head>
 <body>
-
+        <header>
+            <h1>Contact info</h1>
+            
+        </header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="student.html">Students</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+  </body>
+    
 <div class="container">
-    <h1>Contact Us</h1>
+    
     <form action="/submit_form" method="POST">
         <div class="form-group">
             <label for="name">Your Name</label>
@@ -82,6 +133,9 @@
         <button type="submit" class="btn-submit">Send Message</button>
     </form>
 </div>
-
-</body>
+      </style>  
+    
+    <footer>
+        <p>&copy; 2025 Our School . All rights reserved.</p>
+    </footer>
 </html>
